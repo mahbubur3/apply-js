@@ -133,4 +133,3 @@ console.log(animals); */
 // let friendsName = ["john", "tess", "ravi", "smith", "jack", "carolina"];
 // let result = friendLargeName(friendsName);
 // console.log(result);
-
