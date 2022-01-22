@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event</title>
 </head>
-<body>
-    <p id="click-me"></p>
-    
-    <h2>Most valuable brand</h2>
-    <button onclick="seeValuableBrand()">Click for see</button>
 
-    <h2>Most popular brand</h2>
-    <button id="popular-brand">Click for see</button>
+<body>
+    <!--  1............  -->
+
+    <h1>Asus ROG</h1>
+    <button onclick="setRedColor()">Click</button>
 
     <script>
-        // using function 
-        function seeValuableBrand() {
-            let seeBrand = document.getElementById('click-me');
-            seeBrand.innerText = 'Apple';
+        function setRedColor() {
+            document.body.style.backgroundColor = 'red';
         }
+    </script>
 
-        //direct
-        document.getElementById('popular-brand').addEventListener('click', function() {
-            let seeBrand2 = document.getElementById('click-me');
-            seeBrand2.innerHTML = 'Samsung';
+
+    <!-- <p id="show-text"></p>
+    <button onclick="clicking()">Click</button>
+
+    <script>
+        function clicking() {
+            let clickThis = document.getElementById('show-text');
+            clickThis.innerText = 'I love my country';
+        }
+    </script> -->
+
+
+    <!--  2..........  direct -->
+
+    <h2>Asus ROG</h2>
+    <button id="set-color">Click</button>
+
+    <script>
+        document.getElementById('set-color').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'red';
         })
     </script>
+
+
+    <h3>Abbreviation of NASA</h3>
+    <p id="click-method"></p>
+    <button id="show-text">Click for show</button>
+
+    <script>
+        document.getElementById('show-text').addEventListener('click', function () {
+            let text = document.getElementById('click-method');
+            text.innerText = 'National Aeronautics and Space Administration';
+        })
+    </script>
+
 </body>
+
 </html>
