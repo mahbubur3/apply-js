@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Review About Us</h2>
+    <section>
+        <div id="comment-container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque fugiat consequatur rerum officiis facilis perspiciatis maxime recusandae consectetur earum iusto exercitationem accusamus doloremque assumenda quae, sint a iste unde nisi.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, adipisci molestiae. Quis officiis error quisquam veniam nam veritatis nihil magni, modi eaque dolorum vitae ipsam accusamus fugit sequi? Error, sit!</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati suscipit porro consequuntur deleniti reiciendis doloremque asperiores repellendus omnis quas, maiores necessitatibus amet, atque optio non aspernatur facere odit, quibusdam tempore.</p>
+        </div>
+        <div>
+            <textarea name="" id="add-new-comment" cols="70" rows="7"></textarea>
+            <br>
+            <button id="submit-comment">Submit</button>
+        </div>
+    </section>
+
+    <script>
+        // 1. add button event handler
+        document.getElementById('submit-comment').addEventListener('click', function() {
+            // console.log('clicked');
+
+            // 2. get user comment 
+            const commentBox = document.getElementById('add-new-comment');
+            // console.log(commentBox.value);
+            const userComment = commentBox.value; 
+
+            // 3. create comment paragraph
+            const newComment = document.createElement('p');
+            newComment.innerText = commentBox.value;
+
+            // 4. append the comment
+            const addComment = document.getElementById('comment-container');
+            addComment.appendChild(newComment);
+
+            // 5. clear the comment box
+            commentBox.value = '';
+        })
+    </script>
+</body>
+</html>
