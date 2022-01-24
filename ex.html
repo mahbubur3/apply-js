@@ -7,32 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <input id="name-field" type="text">
-    <button id="update-name">Update</button>
-    <p id="click-method"></p>
+    <h2>ABOUT US</h2>
+    <section>
+        <div id="review-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusantium distinctio nulla, perferendis, exercitationem dignissimos quo ex architecto fugit ullam molestias deserunt nam commodi, ad doloribus accusamus dolore repellat sint.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit inventore rem ipsum sequi magnam dolores sit. Ab mollitia ad, reiciendis alias aliquam esse laudantium, facilis excepturi ipsa illum provident dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptas deleniti optio illo totam est nulla ducimus. Distinctio quos possimus minus necessitatibus? Perferendis placeat ex, recusandae voluptatem itaque tempore est?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio rem quasi fuga a placeat doloribus, maiores, natus architecto ratione error praesentium deserunt et reiciendis dolorum cum aspernatur ad facere veritatis?</p>
+        </div>
+        <div>
+            <textarea name="" id="add-new-review" cols="70" rows="7"></textarea> 
+            <br>
+            <button id="submit-review">Submit</button>
+        </div>
+    </section>
 
     <script>
-        document.getElementById('update-name').addEventListener('click', function() {
-            let name = document.getElementById('name-field');
-            let text = document.getElementById('click-method');
-            text.innerText = name.value;
-            name.value = '';
+        document.getElementById('submit-review').addEventListener('click', function() {
+            const reviewBox = document.getElementById('add-new-review');
+            const userReview = reviewBox.value;
+            const newReview = document.createElement('p');
+            newReview.innerText = reviewBox.value;
+            const addReview = document.getElementById('review-container');
+            addReview.appendChild(newReview);
+            reviewBox.value = '';
         })
-    </script> -->
-
-    <!-- <input id="name-field" type="text">
-    <button id="update-name">Update</button>
-    <p id="click-method"></p>
-
-    <script>
-        document.getElementById('update-name').addEventListener('click', function() {
-            let name = document.getElementById('name-field');
-            let text = document.getElementById('click-method');
-            text.innerText = name.value;
-            name.value = '';
-        })
-    </script> -->
-
-    
+    </script>
 </body>
 </html>
