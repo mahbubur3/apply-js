@@ -7,46 +7,34 @@
     <title>Event</title>
 </head>
 <body>
-    <!-- <h2>Student Name</h2>
-    <input id="name-fill" type="text">
-    <button id="update-name">update</button>
-    <p id="click-method"></p>
-
+    <h2>what people say about us & please tell something about us...</h2>
+    <section>
+        <div id="comment-container">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo officiis delectus consequuntur iste architecto modi repellat sequi voluptas asperiores. Sint suscipit, placeat tenetur veniam illum vitae voluptate possimus repudiandae debitis.
+            </p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur ratione soluta obcaecati excepturi pariatur molestias, cumque nesciunt corporis aperiam eos repellendus magni autem incidunt dolorum eveniet quo, deserunt reprehenderit!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nesciunt, nobis molestiae delectus aspernatur id quod odit dicta sint dignissimos tempore excepturi error suscipit! Modi voluptatum facilis saepe nihil impedit.
+            </p>
+        </div>
+        <div>
+            <textarea name="" id="comment-box" cols="70" rows="6"></textarea>
+            <br>
+            <button id="submit-comment">Submit</button>
+        </div>
+    </section>
     <script>
-        document.getElementById('update-name').addEventListener('click', function() {
-            const nameFill = document.getElementById('name-fill');
-            const p = document.getElementById('click-method');
-            p.innerText = nameFill.value;
-            nameFill.value = '';
+        document.getElementById('submit-comment').addEventListener('click', function() {
+            const commentBox = document.getElementById('comment-box');
+            const showComment = commentBox.value;
+            const createComment = document.createElement('p');
+            createComment.innerText = showComment;
+            const addComment = document.getElementById('comment-container');
+            addComment.appendChild(createComment);
+            commentBox.value = "";
         })
-    </script> -->
-
-    <!-- <h2>Update Your Name</h2>
-    <input id="user-text" type="text">
-    <button id="update-name">Update</button>
-    <p id="click-function"></p>
-
-    <script>
-        document.getElementById('update-name').addEventListener('click', function() {
-            const userText = document.getElementById('user-text');
-            const addToParagraph = document.getElementById('click-function');
-            addToParagraph.innerText = userText.value;
-            userText.value = "";
-        })
-    </script> -->
-
-    <!-- <h2>Update Your Full Name</h2>
-    <input id="input-text" type="text">
-    <button id="update-name">Click</button>
-    <p id="click-method"></p>
-
-    <script>
-        document.getElementById('update-name').addEventListener('click', function() {
-            const inputText = document.getElementById('input-text');
-            const addToParagraph = document.getElementById('click-method');
-            addToParagraph.innerText = inputText.value;
-            inputText.value = "";
-        })
-    </script> -->
+    </script>
 </body>
 </html>
