@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>My Device...</h2>
+    <section>
+        <button id="delete-buttton">Delete</button>
+        <h3 id="phone-name">Samsung Galaxy S21 Ultra</h3>
+    </section>
+    <script>
+        document.getElementById('delete-button').addEventListener('click', function () {
+            document.getElementById('phone-name').style.display = 'none';
+        })
+    </script>
+</body>
+
+</html>
