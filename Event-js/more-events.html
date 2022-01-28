@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>My Device...</h2>
+    <section>
+        <input id="delete-confirm" type="text" placeholder="Please type Delete">
+        <button id="delete-button" disabled>Delete</button>
+        <h3 id="phone-name">Samsung Galaxy S21 Ultra</h3>
+    </section>
+    <script>
+        document.getElementById('delete-button').addEventListener('click', function () {
+            document.getElementById('phone-name').style.display = 'none';
+        })
+
+        // focus 
+        // document.getElementById('delete-confirm').addEventListener('focus', function () {
+        //     document.body.style.backgroundColor = 'yellow';
+        // })
+
+        // blur
+        // document.getElementById('delete-confirm').addEventListener('blur', function () {
+        //     document.body.style.backgroundColor = 'white';
+        // })
+
+        // keyup
+        // document.getElementById('delete-confirm').addEventListener('keyup', function () {
+        //     const deleteField = document.getElementById('delete-confirm');
+        //     console.log(deleteField.value);
+        // })
+    </script>
+</body>
+
+</html>
