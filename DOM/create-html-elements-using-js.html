@@ -26,7 +26,7 @@
         add.appendChild(create);
     </script> -->
 
-    <section>
+    <!-- <section>
         <h3>Best smartphone of the year in 2021</h3>
         <ul id="brands">
             <li>Galaxy S21Ultra</li>
@@ -40,6 +40,55 @@
         createAnother.innerText = "iPhone 13 Mini";
         const addItem = document.getElementById('brands');
         addItem.appendChild(createAnother);
+    </script> -->
+
+    <section id="blogs">
+        <h2>Mobile Phone Blog</h2>
+        <article>
+            <h3>Apple</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aspernatur repellendus, libero illo
+                tenetur alias facere nulla ut obcaecati cupiditate perferendis cumque nihil quod odio distinctio ratione
+                dolorum sunt ab harum eum, quis rem! Quas repellendus, repellat dignissimos quo consectetur vero
+                veritatis eos animi incidunt id rem maxime hic aliquid. Ab voluptates harum ullam veniam deleniti,
+                sequi, provident omnis eligendi unde alias explicabo necessitatibus odit, ipsum doloremque nobis? Eius
+                tenetur ipsam aperiam atque ullam nam officia iusto. Voluptatibus dolorum saepe vero ipsam libero?
+                Exercitationem at, suscipit placeat ullam consectetur sed odit corporis dignissimos? Distinctio, atque
+                ea! Sunt dolorum doloribus id?</p>
+        </article>
+        <article>
+            <h3>Samsung</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, magnam nulla non impedit placeat
+                nesciunt illo distinctio deserunt eaque delectus repellat voluptatibus. Eaque reiciendis sunt doloribus
+                reprehenderit eveniet nostrum enim. Eaque animi sed non laudantium, impedit voluptatibus deleniti sequi
+                similique nesciunt ratione vero incidunt voluptates reiciendis, ipsa odio beatae quis quisquam,
+                molestiae mollitia sapiente ullam. Ipsam commodi, placeat aut dolorem perferendis architecto quos optio
+                totam modi fugit delectus neque voluptates consequatur officia iusto necessitatibus velit assumenda
+                suscipit reiciendis non quia enim. Esse saepe cumque distinctio recusandae blanditiis quis, eveniet sunt
+                deserunt ex officia aperiam, tempore doloribus earum explicabo repellat ut?</p>
+        </article>
+        <article>
+            <h3>Xiaomi</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus, odio eligendi culpa nemo nihil
+                magnam. Perspiciatis dignissimos debitis tenetur earum dolor? Esse sequi distinctio quas consectetur
+                nulla explicabo adipisci, tempore modi eligendi ratione sapiente, voluptas quidem ea soluta. Quidem est
+                magnam labore dolore neque nam adipisci. Maiores tempore amet excepturi praesentium impedit obcaecati
+                vitae adipisci nemo eveniet exercitationem. Tenetur quod temporibus eos, quas cum numquam necessitatibus
+                odio optio autem praesentium veritatis accusantium officiis voluptates neque, voluptatem culpa ex nihil!
+                Asperiores repudiandae quis iusto ab dolores minima quod ex nisi perspiciatis! Facilis, tempora corrupti
+                illo nulla id dignissimos eius alias?</p>
+        </article>
+    </section>
+    <script>
+        const createArticle = document.createElement('article');
+        const createH3 = document.createElement('h3');
+        createH3.innerText = "Google";
+        const createParagraph = document.createElement('p');
+        createParagraph.innerText = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus, odio eligendi culpa Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum minus, odio eligendi culpa nemo nihnulla explicabo adipisci, tempore modi eligendi ratione sapiente, voluptas quidem ea soluta";
+        createArticle.appendChild(createH3);
+        createArticle.appendChild(createParagraph);
+
+        const blogsSection = document.getElementById('blogs');
+        blogsSection.appendChild(createArticle);
     </script>
 </body>
 
