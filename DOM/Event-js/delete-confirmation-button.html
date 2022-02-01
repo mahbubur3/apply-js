@@ -17,14 +17,13 @@
     </section>
     <script>
         document.getElementById('delete-confirm').addEventListener('keyup', function (event) {
-            const deleteButton = document.getElementById('delete-confirm');
-            console.log(deleteButton.value);
-            // if (event.target.value == 'delete') {
-            //     deleteButton.removeAttribute('disabled');
-            // }
-            // else {
-            //     deleteButton.setAttribute('disabled', true);
-            // }
+            const deleteButton = document.getElementById('delete-button');
+            if (event.target.value == 'delete') {
+                deleteButton.removeAttribute('disabled');
+            }
+            else {
+                deleteButton.setAttribute('disabled', true);
+            }
         })
         // document.getElementById('delete-confirm').addEventListener('change', function (event) {
         //     const deleteButton = document.getElementById('delete-confirm');
@@ -40,5 +39,3 @@
 </body>
 
 </html>
-
-amarder
