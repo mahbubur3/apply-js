@@ -334,6 +334,45 @@
             nameField.value = "";
         })
     </script> -->
+
+
+    <section>
+        <h2>Review about us</h2>
+        <div id="comment-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam, ratione dolor
+                necessitatibus hic ipsa quod! Deleniti et sapiente nihil atque nobis dolor blanditiis vitae asperiores
+                dicta error, id magnam laborum minima voluptatum officiis. Illo earum a consequuntur animi. Molestiae
+                ducimus debitis quae? Illo inventore molestiae voluptatibus facilis laboriosam voluptatum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam architecto ab asperiores vitae ad
+                nulla iure beatae, quia a earum tempora eum reiciendis, fugit fugiat ducimus laboriosam sapiente.
+                Explicabo nam tenetur, natus expedita ipsa in veniam laboriosam deserunt, ut architecto ullam esse,
+                voluptas alias itaque rerum cupiditate maiores beatae?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque repellat doloribus animi esse nisi,
+                minus delectus sunt omnis tempore quasi enim aliquam voluptatibus, consequatur temporibus est! Corrupti
+                ullam magnam nemo ex distinctio a dolorum nihil iste. Dicta quod tempora amet natus esse aliquam
+                officiis voluptatibus, obcaecati earum minus. Possimus, soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus repudiandae, possimus incidunt iure
+                fugit sapiente consequuntur ea ab delectus, natus quasi fugiat ut enim. Rem ad deleniti dolorum quaerat
+                quis voluptatibus fugiat, earum facilis doloremque laboriosam aut possimus totam saepe! Laudantium
+                voluptatum quis praesentium tenetur labore, velit id esse.</p>
+        </div>
+        <div>
+            <textarea name="" id="comment-box" cols="80" rows="7"></textarea>
+            <br>
+            <button id="submit">Submit</button>
+        </div>
+    </section>
+    <script>
+        document.getElementById('submit').addEventListener('click', function () {
+            const commentBox = document.getElementById('comment-box');
+            const userComment = commentBox.value;
+            const createNewComment = document.createElement('p');
+            createNewComment.innerText = userComment;
+            const addComment = document.getElementById('comment-container');
+            addComment.appendChild(createNewComment);
+            commentBox.value = "";
+        })
+    </script>
 </body>
 
 </html>
