@@ -12,6 +12,8 @@
     <h2>My Device...</h2>
     <section>
         <button id="delete-button">Delete</button>
+        <input id="delete-confirm" type="text" placeholder="Please type Delete">
+        <button id="delete-button" disabled>Delete</button>
         <h3 id="phone-name">Samsung Galaxy S21 Ultra</h3>
     </section>
     <script>
@@ -19,14 +21,15 @@
             document.getElementById('delete-button').style.display = 'none';
         })
     </script>
+
     <!-- on">Delete</button>
-    <h3 id="phone-name">Samsung Galaxy S21 Ultra</h3>
-    </section>
-    <script>
-        document.getElementById('delete-button').addEventListener('click', function () {
-            document.getElementById('phone-name').style.display = 'none';
-        })
-    </script> -->
+        <h3 id="phone-name">Samsung Galaxy S21 Ultra</h3>
+        </section>
+        <script>
+            document.getElementById('delete-button').addEventListener('click', function () {
+                document.getElementById('phone-name').style.display = 'none';
+            })
+        </script> -->
 </body>
 
 </html>

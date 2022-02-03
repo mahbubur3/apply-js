@@ -42,7 +42,7 @@
         addItem.appendChild(createAnother);
     </script> -->
 
-    <section id="blogs">
+    <!-- <section id="blogs">
         <h2>Mobile Phone Blog</h2>
         <article>
             <h3>Apple</h3>
@@ -89,6 +89,38 @@
 
         const blogsSection = document.getElementById('blogs');
         blogsSection.appendChild(createArticle);
+    </script> -->
+
+    <section id="blog-section">
+        <h2>History of Computer Operating System</h2>
+        <article>
+            <h3>Windows</h3>
+            <p>Microsoft Windows, commonly referred to as Windows, is a group of several proprietary graphical operating
+                system families, all of which are developed and marketed by Microsoft. Each family caters to a certain
+                sector of the computing industry. Active Microsoft Windows families include Windows NT and Windows IoT;
+                these may encompass subfamilies. Defunct Microsoft Windows families include Windows 9x, Windows Mobile
+                and Windows Phone.</p>
+        </article>
+        <article>
+            <h3>macOS</h3>
+            <p>he history of macOS, Apple's current Mac operating system formerly named Mac OS X until 2012 and then OS
+                X until 2016, began with the company's project to replace its "classic" Mac OS. That system, up to and
+                including its final release Mac OS 9, was a direct descendant of the operating system Apple had used in
+                its Macintosh computers since their introduction in 1984. However, the current macOS is a Unix operating
+                system built on technology that had been developed at NeXT from the 1980s until Apple purchased the
+                company in early 1997.</p>
+        </article>
+    </section>
+    <script>
+        const article = document.createElement('article');
+        const h3 = document.createElement('h3');
+        h3.innerText = 'Linux';
+        const p = document.createElement('p');
+        p.innerText = 'Linux began in 1991 as a personal project by Finnish student Linus Torvalds: to create a new free operating system kernel. The resulting Linux kernel has been marked by constant growth throughout its history. Since the initial release of its source code in 1991, it has grown from a small number of C files under a license prohibiting commercial distribution to the 4.15 version in 2018 with more than 23.3 million lines of source code, not counting comments,[1] under the GNU General Public License v2.';
+        article.appendChild(h3);
+        article.appendChild(p);
+        const blogsSection = document.getElementById('blog-section');
+        blogsSection.appendChild(article);
     </script>
 </body>
 
