@@ -17,10 +17,10 @@ for (let i = 0; i < products.length; i++) {
 }
 
 
-let products = ["shirt, keyboard, charger, cable, light, shoe"];
-for (let item of products) {
-    console.log(item);
-}
+// let products = ["shirt, keyboard, charger, cable, light, shoe"];
+// for (let item of products) {
+//     console.log(item);
+// }
 
 
 let ages = [56, 43, 23, 54, 78, 64, 89];
