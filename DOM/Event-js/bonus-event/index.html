@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="brand">
+            <h2>Samsung</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error similique facilis, voluptatem cum tempora
+                laboriosam neque iste tenetur, maxime, quisquam ex eius consectetur mollitia illo accusantium ea
+                reprehenderit adipisci ratione non porro ducimus rem placeat. Consequatur sint, cupiditate aspernatur
+                suscipit dolores tempore eum atque est a itaque hic. Eligendi, quidem. Perferendis, nostrum sapiente!
+                Quam, repellendus temporibus molestiae repellat, earum quidem repudiandae reprehenderit voluptatem
+                accusantium inventore exercitationem. Enim quam numquam nam consequuntur, architecto, cumque, impedit ea
+                laboriosam omnis animi excepturi corrupti voluptatibus repudiandae similique qui libero! Sequi nemo
+                iusto, impedit nam perspiciatis tempore accusantium eligendi, quasi eos rerum reprehenderit, fugit iste?
+            </p>
+        </div>
+        <div class="brand">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, velit animi? Vel inventore, enim
+                ratione aliquam, beatae possimus reprehenderit tempora cum nihil repellat quo dolor tenetur totam
+                similique assumenda nisi velit at laboriosam natus ullam provident aperiam? Exercitationem facilis
+                asperiores laboriosam deserunt quidem eos nisi blanditiis totam soluta iste velit sunt nobis tempora
+                tenetur laborum recusandae mollitia, enim eaque. Itaque explicabo dolorum excepturi. Accusamus maiores
+                ipsam modi nisi natus totam soluta tempore, debitis magni atque assumenda, provident tempora vel vero.
+                Natus distinctio cumque maxime reiciendis laboriosam, aut, officiis tempore nisi sunt quam, rerum
+                consequatur beatae aspernatur perferendis corporis! Explicabo, porro.</p>
+        </div>
+        <div class="brand">
+            <h2>Xiaomi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, obcaecati? A praesentium delectus ullam
+                vel expedita dolorum distinctio minima rerum ipsam cum. Eos pariatur unde nemo asperiores debitis quia,
+                possimus ex. Ad incidunt, quo libero, cupiditate itaque quos aliquid eos eius molestiae nemo laudantium
+                voluptate perferendis voluptatum aperiam! Dicta, voluptate molestiae. Dolor nam voluptatum reiciendis
+                necessitatibus, quam fuga obcaecati labore nostrum, iste et omnis, eum minima id! Veritatis sapiente
+                libero dignissimos non deserunt! Impedit, voluptatem. Dolorum est nesciunt atque eum natus ipsam optio,
+                architecto quas recusandae pariatur possimus reprehenderit, reiciendis quos nostrum sint facilis
+                voluptatibus maiores exercitationem modi dignissimos tempore.</p>
+            <button>Edit</button>
+        </div>
+    </section>
+    <script>
+        function setPlayerStyle(brand) {
+            brand.style.border = '2px solid green';
+            brand.style.margin = '10px';
+            brand.style.padding = '5px';
+        }
+
+        const allBrand = document.getElementsByClassName('brand');
+        for (const brand of allBrand) {
+            setPlayerStyle(brand);
+            brand.addEventListener('click', function () {
+                brand.style.backgroundColor = 'yellow';
+            })
+        }
+    </script>
+</body>
+
+</html>
