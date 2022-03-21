@@ -15,3 +15,11 @@ console.log(result);
 let myName = () => 'Mahbub';
 let output = myName();
 console.log(output);
+
+// multiline arrow function..
+let sum = (a, b) => {
+    let result = a + b;
+    return result;
+};
+let total = sum(5, 10);
+console.log(total);
