@@ -5,3 +5,8 @@
     margin: 20px;
     padding: 20px;
 }
+
+#countries-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
