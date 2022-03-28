@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <style>
+        .country {
+            border: 2px solid indianred;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Countries Information</h2>
+    <div id="country-details"></div>
+    <div id="container"></div>
+
+    <script>
+        const loadCountries = () => {
+            fetch('https://restcountries.com/v3.1/all')
+                .then(response => response.json())
+                .then(data => displayCountries(data))
+        }
+        loadCountries();
+
+        const displayCountries = (countries) => {
+            console.log(countries);
+            const container = document.getElementById('container');
+            countries.forEach(country => {
+                const div = document.createElement('div');
+                div.classList.add('country');
+                div.innerHTML = `
+                <p>Name: ${country.name.common}</p>
+                <p>Capital: ${country.capital}</p>
+                <button onclick="loadDetails('${country.name.common}')">More</button>
+                `;
+                container.appendChild(div);
+            })
+        };
+
+        const loadDetails = (name) => {
+            const url = `https://restcountries.com/v3.1/name/${name}`;
+            fetch(url)
+                .then(response => response.json())
+                .then(data => displayDetails(data[0]))
+        };
+
+        const displayDetails = country => {
+            const countryDetails = document.getElementById('country-details');
+            countryDetails.innerHTML = `
+                <p>Region: ${country.region}</p>
+                <p>Sub Region: ${country.subregion}</p>
+            `;
+        };
+    </script>
+</body>
+
+</html>

@@ -25,13 +25,19 @@
             countries.forEach(country => {
                 let div = document.createElement('div');
 
-                let h3 = document.createElement('h3');
-                h3.innerText = country.name;
-                div.appendChild(h3);
+                // let h3 = document.createElement('h3');
+                // h3.innerText = country.name;
+                // div.appendChild(h3);
 
-                let p = document.createElement('p');
-                p.innerText = country.region;
-                div.appendChild(p);
+                // let p = document.createElement('p');
+                // p.innerText = country.region;
+                // div.appendChild(p);
+
+                // with innerHTML
+                div.innerHTML = `
+                    <h3>${country.name}</h3>
+                    <p>${country.region}</p>
+                    `;
 
                 countriesContainer.appendChild(div);
             });
