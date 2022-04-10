@@ -137,3 +137,11 @@ console.log(animals); */
 
 // let a = {};
 // console.log(a.name);
+
+let a = (name) => {
+    return (age) => console.log(name, age);
+};
+// a('Rahim', 25);
+// a('Rahim')(25);
+// a => (rahim)(25);
+a(rahim)(25);
