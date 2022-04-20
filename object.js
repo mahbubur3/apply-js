@@ -1,10 +1,10 @@
 // object holo jekhane onek boisisto rakha jay....
 
 // var mobileInfo = {
-//     brand : "Samsung",
-//     modelName : "Galaxy J7",
-//     ram : "3GB",
-//     price : 29000
+//     brand: "Samsung",
+//     modelName: "Galaxy J7",
+//     ram: "3GB",
+//     price: 29000
 // };
 // console.log(mobileInfo);
 
