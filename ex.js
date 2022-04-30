@@ -138,10 +138,24 @@ console.log(animals); */
 // let a = {};
 // console.log(a.name);
 
-let a = (name) => {
-    return (age) => console.log(name, age);
-};
+// let a = (name) => {
+//     return (age) => console.log(name, age);
+// };
 // a('Rahim', 25);
 // a('Rahim')(25);
 // a => (rahim)(25);
-a(rahim)(25);
+// a(rahim)(25);
+
+// document.getElementById('submit-btn').addEventListener('click', function () {
+//     console.log('clicked');
+// })
+
+// const submit = document.getElementById('submit-btn');
+// submit.addEventListener('click', function () {
+//     console.log('clicked');
+// })
+
+const submit = document.querySelector('submit-btn');
+submit.addEventListener('click', function () {
+    console.log('clicked');
+})
