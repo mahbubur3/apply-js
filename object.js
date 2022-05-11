@@ -71,9 +71,9 @@
 // let person = new People('John', 30); // creating an object
 // console.log(person);
 
-/* 
+/*
 let mobile = {
-    brand: 'Samsung',
+    brand: 'Samsung', // ekhane brand, model, price hocche properties
     model: 'Galaxy S8',
     price: '$899'
 }
@@ -90,6 +90,7 @@ let showKeysAndValues = Object.entries(mobile)
 console.log(showKeysAndValues);
  */
 
+/*
 // nasted object
 let mobile = {
     brand: 'Samsung',
@@ -109,3 +110,50 @@ let mobile = {
 
 let showValues = Object.values(mobile.camera.rearCamera)
 console.log(showValues);
+ */
+
+
+// loop throw in a object
+// let laptop = {
+//     brand: 'Dell',
+//     model: 'XPS 15',
+//     price: 999
+// }
+
+// for (let showKeys in laptop) {
+//     console.log(laptop[showKeys]);
+// }
+
+const laptop = {
+    brand: 'dell',
+    model: 'xps 13',
+    price: '$999'
+}
+
+for (const [key, value] in Object.entries(laptop)) {
+    console.log(key, value);
+}
+
+/*
+// adding new properties
+let laptop = {
+    brand: 'Dell',
+    model: 'XPS 15',
+    price: 999
+}
+
+laptop.ram = '16GB';
+laptop.storage = '512GB M.2 SSD'
+console.log(laptop);
+ */
+
+
+// deleting properties
+// let laptop = {
+//     brand: 'Dell',
+//     model: 'XPS 15',
+//     price: 999
+// }
+
+// delete laptop.price;
+// console.log(laptop);
