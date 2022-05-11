@@ -155,7 +155,19 @@ console.log(animals); */
 //     console.log('clicked');
 // })
 
-const submit = document.querySelector('submit-btn');
-submit.addEventListener('click', function () {
-    console.log('clicked');
-})
+
+// const submit = document.querySelector('submit-btn');
+// submit.addEventListener('click', function () {
+//     console.log('clicked');
+// })
+
+
+// class People {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+
+// let person = new People('John', 30);
+// console.log(person);

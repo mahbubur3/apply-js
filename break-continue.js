@@ -40,12 +40,12 @@
 // }
 
 // continue...
-// var numbers = [56, 34, 89, 44, 90, 54, 9, 10];
-// for (var i = 0; i < numbers.length; i++) {
-//     var number = numbers[i];
-//     if (number > 80) {
-//         continue;
-//     }
-//     console.log(number);
-// }
+var numbers = [56, 34, 89, 44, 90, 54, 9, 10];
+for (var i = 0; i < numbers.length; i++) {
+    var number = numbers[i];
+    if (number > 80) {
+        continue;
+    }
+    console.log(number);
+}
 
