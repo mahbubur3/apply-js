@@ -221,16 +221,150 @@
 
 
 // ! spread operator
-// let numbers = [56, 32, 89, 67, 12, 78]
-// let newArray = [...numbers];
-// numbers.push(99);
-// numbers.push(88)
-// console.log(numbers);
-// console.log(newArray);
-
 // let numbers = [6, 5, 8, 4, 2, 9];
 // console.log(numbers);
 // console.log(...numbers);
 
-let array1 = [6, 5, 8, 9];
-let array2 = []
+// * Copy Array Using Spread Operator
+// let array1 = [6, 5, 8, 9];
+// let array2 = [...array1, 4, 3, 1, 2, 7]
+// console.log(array2);
+
+// let numberList1 = [10, 60, 50];
+// let numberList2 = [...numberList1, 90, 20, 80];
+// console.log(numberList2);
+
+
+// ! array methods (map, filter, find, foreach)
+// * map
+// let products = [
+//     { name: 'Phone', price: 10000, color: 'Black' },
+//     { name: 'Laptop', price: 40000, color: 'Silver' },
+//     { name: 'Mouse', price: 800, color: 'Grey' },
+//     { name: 'Keyboard', price: 1200, color: 'Red' },
+//     { name: 'Pendrive', price: 300, color: 'Black' },
+// ];
+// let showPrice = products.map(i => i.price);
+// console.log(showPrice);
+
+// let showName = products.map(i => i.name);
+// console.log(showName);
+
+
+// * foreach
+// let products = [
+//     { name: 'Phone', price: 10000, color: 'Black' },
+//     { name: 'Laptop', price: 40000, color: 'Silver' },
+//     { name: 'Mouse', price: 800, color: 'Grey' },
+//     { name: 'Keyboard', price: 1200, color: 'Red' },
+//     { name: 'Pendrive', price: 300, color: 'Black' },
+// ];
+
+// products.forEach(product => console.log(product))
+// products.forEach(product => console.log(product.color))
+// products.forEach(product => {
+//     console.log(product.name);
+// })
+
+
+// * filter
+// let products = [
+//     { name: 'Phone', price: 10000, color: 'Black' },
+//     { name: 'Laptop', price: 40000, color: 'Silver' },
+//     { name: 'Mouse', price: 800, color: 'Grey' },
+//     { name: 'Keyboard', price: 1200, color: 'Red' },
+//     { name: 'Pendrive', price: 300, color: 'Black' },
+//     { name: 'USB Hub', price: 200, color: 'White' }
+// ];
+
+// let cheapProducts = products.filter(product => product.price <= 1000);
+// console.log(cheapProducts); // ? give all the output below 1000 thousand doller
+
+// let checkByName = products.filter(product => product.name.includes('e'));
+// console.log(checkByName);
+
+
+// * find
+// let products = [
+//     { name: 'Phone', price: 10000, color: 'Black' },
+//     { name: 'Laptop', price: 40000, color: 'Silver' },
+//     { name: 'Mouse', price: 800, color: 'Grey' },
+//     { name: 'Keyboard', price: 1200, color: 'Red' },
+//     { name: 'Pendrive', price: 300, color: 'Black' },
+//     { name: 'USB Hub', price: 200, color: 'White' }
+// ];
+
+// let cheapProducts = products.find(product => product.price <= 1000);
+// console.log(cheapProducts); // ? show first matching in the output
+
+// let checkByName = products.find(product => product.name.includes('e'));
+// console.log(checkByName);
+
+// TODO [Note: filter array er moddhe kore object akare data gula dibe aar find sorasori object akare output diya dibe]
+
+
+// ! array and object destructuring and optional chaining
+// * array
+// let [num1, num2] = [50, 90]
+// console.log(num1);
+// console.log(num1, num2);
+
+// let numbers = [50, 90]
+// let [num1, num2] = numbers;
+// console.log(num1);
+// console.log(num2);
+
+// let [c1, c2, c3, c4] = ['Red', 'Green', 'Blue', 'Yellow'];
+// console.log(c3);
+
+// function myNumbers(num1, num2) {
+//     let numbers = [num1, num2];
+//     return numbers;
+// }
+
+// console.log(myNumbers(50, 90));
+
+// * object
+// let { name, age } = { name: 'Mahbub', age: 10 };
+// console.log(name);
+// console.log(age);
+
+// let student = {
+//     name: 'Jhon Smith',
+//     id: 95,
+//     department: 'EEE'
+// }
+
+// let { name, id, department } = student;
+// console.log(name);
+// console.log(id);
+// console.log(department);
+
+// let laptop = {
+//     brand: 'HP',
+//     model: 'Pavilion 15',
+//     cpu: 'AMD Ryzen 5 5500U',
+//     ram: {
+//         slot1: '4GB',
+//         slot2: '4GB'
+//     },
+//     storage: '512GB M.2 SSD'
+// }
+
+// let { brand, cpu } = laptop;
+// let { slot1, slot2 } = laptop.ram;
+// console.log(brand);
+// console.log(slot1, slot2);
+
+// * optional chaining
+// const adventurer = {
+//     name: 'Alice',
+//     cat: {
+//         name: 'Dinah'
+//     }
+// };
+
+// const dogName = adventurer.dog?.name;
+// console.log(dogName);
+
+// TODO [Note: jodi ami specipic kichu kujte cai tahole seti nao thakte pare seikhetre optional chaining use korbo thikache]
