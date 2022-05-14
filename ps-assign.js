@@ -49,3 +49,5 @@ function perfectFriend(friendsName) {
 let friendsName = ["siddik", "sakib", "marjan", "samaun", "pollov"];
 let result = perfectFriend(friendsName);
 console.log(result);
+
+const myName = 'Hellow World'
