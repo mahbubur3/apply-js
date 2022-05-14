@@ -13,7 +13,7 @@
 // bookList();
 
 
-// // ___** with parametter **___
+// ! with parametter
 // function buyPen(taka) {
 //     console.log("pen price:", taka);
 // }
@@ -27,7 +27,7 @@
 // buyDesktop(desktopPrice);
 
 
-// // **** return ****
+// ! return
 // function buyLaptop(price)  {
 //     var laptopPrice = 950;
 //     var myRestMoney = price - laptopPrice;
@@ -47,7 +47,7 @@
 // console.log(result);
 
 
-// // multiple parameter
+// ! multiple parameter
 // function subtraction(num1, num2) {
 //     var total = num1 - num2;
 //     return total;
@@ -65,7 +65,7 @@
 // console.log(result);
 
 
-// ---------- unlimited parameters using arguments
+// ! unlimited parameters using arguments
 function addNumbers() {
     let result = 0;
     for (const num of arguments) {

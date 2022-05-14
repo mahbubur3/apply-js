@@ -5,7 +5,7 @@
 // console.log(result);
 
 
-// // function expression...
+// ! function expression...
 // let addition = function sum(a, b) {
 //     return a + b;
 // }
@@ -13,7 +13,7 @@
 // console.log(result);
 
 
-// // function expression (anonymous)....
+// ! function expression (anonymous)....
 // let addition = function (a, b) {
 //     return a + b;
 // }
