@@ -300,7 +300,7 @@
 // let checkByName = products.find(product => product.name.includes('e'));
 // console.log(checkByName);
 
-// TODO [Note: filter array er moddhe kore object akare data gula dibe aar find sorasori object akare output diya dibe]
+// ? [Note: filter array er moddhe kore object akare data gula dibe aar find sorasori object akare output diya dibe]
 
 
 // ! array and object destructuring and optional chaining
@@ -367,4 +367,77 @@
 // const dogName = adventurer.dog?.name;
 // console.log(dogName);
 
-// TODO [Note: jodi ami specipic kichu kujte cai tahole seti nao thakte pare seikhetre optional chaining use korbo thikache]
+// ? [Note: jodi ami specipic kichu kujte cai tahole seti nao thakte pare seikhetre optional chaining use korbo thikache]
+
+
+// ! JSON
+// const adventurer = {
+//     name: 'Alice',
+//     cat: {
+//         name: 'Dinah'
+//     }
+// };
+
+// const convertJson = JSON.stringify(adventurer);
+// console.log(convertJson);
+
+// ? [Note: JavaScript ke JSON a convert korte hole JSON.stringify likhte hoy ar JSON ke JavaScript a convert korte hole JSON.parse likhte hoy]
+
+
+// ! fetch
+// fetch('url')
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+
+
+// ! keys and values
+// let laptop = {
+//     brand: 'HP',
+//     model: 'Pavilion 15',
+//     cpu: 'AMD Ryzen 5 5500U',
+//     ram: {
+//         slot1: '4GB',
+//         slot2: '4GB'
+//     },
+//     storage: '512GB M.2 SSD'
+// }
+
+// let showKeys = Object.keys(laptop);
+// console.log(showKeys);
+
+// let showValues = Object.values(laptop);
+// console.log(showValues);
+
+// let showKeysAndValues = Object.entries(laptop);
+// console.log(showKeysAndValues);
+
+
+// ! array add or remove using 3 dots
+// * add
+// let products = [
+//     { name: 'Phone', price: 10000, brand: 'Samsung' },
+//     { name: 'Laptop', price: 40000, brand: 'Apple' },
+//     { name: 'Mouse', price: 800, brand: 'Logitech' },
+//     { name: 'Keyboard', price: 1200, brand: 'Fantech' },
+//     { name: 'Pendrive', price: 300, brand: 'Adata' },
+//     { name: 'USB Hub', price: 200, brand: 'Ugreen' }
+// ];
+
+// let newProduct = { name: 'Mouse Pad', price: 900, brand: 'Corsair' };
+// let newProducts = [...products, newProduct];
+// console.log(newProducts);
+
+let products = [
+    { name: 'Phone', price: 10000, brand: 'Samsung' },
+    { name: 'Laptop', price: 40000, brand: 'Apple' },
+    { name: 'Mouse', price: 800, brand: 'Logitech' },
+    { name: 'Keyboard', price: 1200, brand: 'Fantech' },
+    { name: 'Pendrive', price: 300, brand: 'Adata' },
+    { name: 'USB Hub', price: 200, brand: 'Ugreen' }
+];
+
+// let removeProduct = products.filter(product => product.name !== 'Phone');
+// console.log(removeProduct);
+
+let removeProduct = products.filter(product => product.name !== 'Mouse');
+console.log(removeProduct);
