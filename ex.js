@@ -171,3 +171,54 @@ console.log(animals); */
 
 // let person = new People('John', 30);
 // console.log(person);
+
+
+// class Student {
+//     constructor() {
+//         this.name = 'Will Smith';
+//     }
+// }
+
+// let info = new Student();
+// console.log(info);
+
+// class Car {
+//     constructor(name, year) {
+//         this.name = name;
+//         this.year = year;
+//     }
+// }
+
+// let myCar = new Car('Honda Civic', 2022);
+// let myFriendCar = new Car('Toyota CHR', 2020);
+// console.log(myCar);
+// console.log(myFriendCar);
+
+
+// class Rectangle {
+//     constructor(height, width) {
+//         this.h = height;
+//         this.w = width;
+//     }
+
+//     calculateArea() {
+//         return this.h * this.w;
+//     }
+// }
+
+// let result = new Rectangle(30, 20);
+// console.log(result.calculateArea());
+
+
+class Boss {
+    constructor(name) {
+        this.name = name;
+    }
+
+    greet() {
+        return `Hello! ${this.name}`;
+    }
+}
+
+let toGreet = new Boss('Smith');
+console.log(toGreet.greet());

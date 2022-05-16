@@ -26,17 +26,34 @@ console.log(info);
 // console.log(myCar);
 // console.log(hisCar);
 
-class Car {
-    constructor(model, brand, year) {
-        this.modelName = model;
-        this.brandName = brand;
-        this.modelYear = year;
+// class Car {
+//     constructor(model, brand, year) {
+//         this.modelName = model;
+//         this.brandName = brand;
+//         this.modelYear = year;
+//     }
+
+//     drive() {
+//         return 'Drive the Civic!!';
+//     }
+// }
+
+// let myCar = new Car('Civic', 'Honda', 2022);
+// let hisCar = new Car('Premio', 'Toyota', 2019);
+// console.log(myCar.drive());
+// console.log(hisCar);
+
+
+class Rectangle {
+    constructor(height, width) {
+        this.h = height;
+        this.w = width;
     }
-    drive() {
-        return 'Drive the Civic!!';
+
+    calculateArea() {
+        return this.h * this.w;
     }
 }
-let myCar = new Car('Civic', 'Honda', 2022);
-let hisCar = new Car('Premio', 'Toyota', 2019);
-console.log(myCar.drive());
-console.log(hisCar);
+
+let result = new Rectangle(30, 20);
+console.log(result.calculateArea());
