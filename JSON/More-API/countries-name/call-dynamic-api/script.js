@@ -12,9 +12,9 @@ const showCountries = (countries) => {
         const createDiv = document.createElement('div');
         createDiv.classList.add('country');
         createDiv.innerHTML = `
-        <h3>Name: ${country.name.common}</h3>
-        <p>Capital: ${country.capital}</p>
-        <button onclick = "loadDetails('${country.name.common}')">Details</button>
+            <h3>Name: ${country.name.common}</h3>
+            <p>Capital: ${country.capital}</p>
+            <button onclick = "loadDetails('${country.name.common}')">Details</button>
         `;
         container.appendChild(createDiv);
     });

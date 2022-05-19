@@ -210,15 +210,21 @@ console.log(animals); */
 // console.log(result.calculateArea());
 
 
-class Boss {
-    constructor(name) {
-        this.name = name;
-    }
+// class Boss {
+//     constructor(name) {
+//         this.name = name;
+//     }
 
-    greet() {
-        return `Hello! ${this.name}`;
-    }
-}
+//     greet() {
+//         return `Hello! ${this.name}`;
+//     }
+// }
 
-let toGreet = new Boss('Smith');
-console.log(toGreet.greet());
+// let toGreet = new Boss('Smith');
+// console.log(toGreet.greet());
+
+
+// * array mapping
+let numbers = [6, 8, 4, 2];
+let sum = numbers.map(number => number + 5);
+console.log(sum);

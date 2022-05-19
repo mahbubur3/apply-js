@@ -1,10 +1,10 @@
-let numbers = [5, 3, 6, 2];
-let output = [];
-for (let number of numbers) {
-    let result = number * 2;
-    output.push(result);
-}
-console.log(output);
+// let numbers = [5, 3, 6, 2];
+// let output = [];
+// for (let number of numbers) {
+//     let result = number * 2;
+//     output.push(result);
+// }
+// console.log(output);
 
 // let numbers = [5, 3, 6, 2];
 // let output = [];
@@ -15,11 +15,23 @@ console.log(output);
 // }
 // console.log(output);
 
+// * using normal function
+let numbers = [5, 3, 6, 2];
+let doubleIt = numbers.map(function (number) {
+    return number * 2;
+})
+
+console.log(doubleIt);
+
+// const numbers = [5, 3, 6, 2];
+// const result = numbers.map(x => x * 2);
+// console.log(result);
+
 // let numbers = [5, 3, 6, 2];
 // let doubleIt = num => num * 2;
 // let output = numbers.map(doubleIt);
 // console.log(output);
 
-// const numbers = [5, 3, 6, 2];
-// const result = numbers.map(x => x * 2);
-// console.log(result);
+// let numbers = [6, 8, 4, 2];
+// let sum = numbers.map(number => number + 5);
+// console.log(sum);
