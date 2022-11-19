@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <div>
+        <h2>Computer Brand</h2>
+        <ul id="brand-list">
+            <li>Apple</li>
+            <li>Dell</li>
+            <li>Lenovo</li>
+            <li>Microsoft</li>
+        </ul>
+    </div>
+
+    <script>
+        const create = document.createElement('li');
+        create.innerText = 'HP';
+        const add = document.getElementById('brand-list')
+        add.appendChild(create);
+    </script>
+</body>
+
+</html>

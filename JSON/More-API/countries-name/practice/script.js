@@ -17,8 +17,9 @@ const showCountries = countries => {
         // p.innerText = country.capital;
         // countriesBody.appendChild(p);
         div.innerHTML = `
-        <h3>Name: ${country.name.common}</h3>
-        <p>Capital: ${country.capital}</p>`
+            <h3>Name: ${country.name.common}</h3>
+            <p>Capital: ${country.capital}</p>
+        `
         countriesBody.appendChild(div);
     });
 }

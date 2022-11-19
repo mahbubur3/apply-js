@@ -1,4 +1,4 @@
-/*
+
 const products = [
     'Dell XPS 15 laptop',
     'ROG Phone 5',
@@ -18,7 +18,7 @@ for (const product of products) {
     }
 }
 console.log(output);
-*/
+
 // [ekhane kintu capital letter er Laptop nam gula ase nai. er jonno nicher code gula dekho]
 
 /*
@@ -71,25 +71,26 @@ console.log(output);
 */
 
 // using startswiths mane prothom a ja ache ta diye search deya...
-const products = [
-    'Dell XPS 15 laptop',
-    'ROG Phone 5',
-    'MacBook Air laptop',
-    'Galaxy Book Pro',
-    'iPhone 7+ Phone',
-    'Logitech Mouse',
-    'ROG Strix Laptop',
-    'laptop HP Pavilion',
-    'Galaxy S8+ Phone',
-    'Asus Zephyrus Laptop',
-    'ROG Strix Motherboard'
-]
-const searching = 'rog';
-const output = [];
-for (const product of products) {
-    if (product.toLowerCase().startsWith(searching.toLowerCase())) {
-        output.push(product);
-    }
-}
-console.log(output);
+// const products = [
+//     'Dell XPS 15 laptop',
+//     'ROG Phone 5',
+//     'MacBook Air laptop',
+//     'Galaxy Book Pro',
+//     'iPhone 7+ Phone',
+//     'Logitech Mouse',
+//     'ROG Strix Laptop',
+//     'laptop HP Pavilion',
+//     'Galaxy S8+ Phone',
+//     'Asus Zephyrus Laptop',
+//     'ROG Strix Motherboard'
+// ]
+
+// const searching = 'rog';
+// const output = [];
+// for (const product of products) {
+//     if (product.toLowerCase().startsWith(searching.toLowerCase())) {
+//         output.push(product);
+//     }
+// }
+// console.log(output);
 

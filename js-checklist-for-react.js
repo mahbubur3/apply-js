@@ -427,17 +427,17 @@
 // let newProducts = [...products, newProduct];
 // console.log(newProducts);
 
-let products = [
-    { name: 'Phone', price: 10000, brand: 'Samsung' },
-    { name: 'Laptop', price: 40000, brand: 'Apple' },
-    { name: 'Mouse', price: 800, brand: 'Logitech' },
-    { name: 'Keyboard', price: 1200, brand: 'Fantech' },
-    { name: 'Pendrive', price: 300, brand: 'Adata' },
-    { name: 'USB Hub', price: 200, brand: 'Ugreen' }
-];
+// let products = [
+//     { name: 'Phone', price: 10000, brand: 'Samsung' },
+//     { name: 'Laptop', price: 40000, brand: 'Apple' },
+//     { name: 'Mouse', price: 800, brand: 'Logitech' },
+//     { name: 'Keyboard', price: 1200, brand: 'Fantech' },
+//     { name: 'Pendrive', price: 300, brand: 'Adata' },
+//     { name: 'USB Hub', price: 200, brand: 'Ugreen' }
+// ];
 
 // let removeProduct = products.filter(product => product.name !== 'Phone');
 // console.log(removeProduct);
 
-let removeProduct = products.filter(product => product.name !== 'Mouse');
-console.log(removeProduct);
+// let removeProduct = products.filter(product => product.name !== 'Mouse');
+// console.log(removeProduct);
