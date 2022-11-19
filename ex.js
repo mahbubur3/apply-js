@@ -225,6 +225,148 @@ console.log(animals); */
 
 
 // * array mapping
-let numbers = [6, 8, 4, 2];
-let sum = numbers.map(number => number + 5);
-console.log(sum);
+// let numbers = [6, 8, 4, 2];
+// let sum = numbers.map(number => number + 5);
+// console.log(sum);
+
+
+// ----------
+// let number = 1
+// while (number < 10) {
+//     console.log(number);
+//     number += 1
+// }
+
+
+// const sum = (num1, num2) => num1 + num2
+// const result = sum(50, 30)
+// console.log(result);
+
+
+// const sum = (a, b) => {
+//     const result = a + b
+//     return result
+// }
+// console.log(sum(5, 6));
+
+
+// const numbers = [6, 4, 8, 7, 3]
+// console.log(...numbers);
+
+
+// const products = [
+//     { name: 'Phone', price: 10000, color: 'Black' },
+//     { name: 'Laptop', price: 40000, color: 'Silver' },
+//     { name: 'Mouse', price: 800, color: 'Grey' },
+//     { name: 'Keyboard', price: 1200, color: 'Red' },
+//     { name: 'Pendrive', price: 300, color: 'Black' },
+// ];
+
+// const showPrice = products.map(i => i.price)
+// console.log(showPrice);
+
+// const showName = products.map(i => i.name)
+// console.log(showName);
+
+
+
+// for (product of products) {
+//     console.log(product);
+// }
+
+// products.forEach(product => {
+//     console.log(product);
+// })
+
+
+
+// const cheapProducts = products.filter(product =>
+//     product.price <= 1000
+// )
+// console.log(cheapProducts);
+
+
+// const checkByName = products.filter(product =>
+//     product.name.includes('p')
+// )
+// console.log(checkByName);
+
+
+// const [num1, num2] = [50, 90]
+// console.log(num1);
+
+
+
+// const { name, age } = { name: 'mahbubur', age: 5 }
+// console.log(name);
+// console.log(age);
+
+// let student = {
+//     name: 'Mahbubur',
+//     id: 3895,
+//     department: 'Computer Science'
+// }
+
+// const { name, id, department } = student
+// console.log(name);
+// console.log(department);
+
+
+// let myDesktopPC = {
+//     cpu: 'i5-10400',
+//     motherboard: 'Aorus B460',
+//     ram: {
+//         slot1: 'Corsair 8GB',
+//         slot2: 'Corsair 8GB',
+//     },
+//     storage: {
+//         1: 'Corsair 240GB',
+//         2: 'WD 120GB'
+//     },
+//     psu: 'Corsair CV450',
+//     case: 'NZXT H510',
+// }
+
+// const { cpu, motherboard } = myDesktopPC
+// console.log(cpu);
+// const { slot1, slot2 } = myDesktopPC.ram
+// console.log(slot1, slot2);
+
+
+
+// const car = {
+//     brand: 'BMW',
+//     about: {
+//         model: '540i',
+//         modelYear: 2021
+//     }
+// }
+
+// const convert = JSON.stringify(car)
+// console.log(convert);
+
+
+
+const myDesktopPC = {
+    cpu: 'i5-10400',
+    motherboard: 'Aorus B460',
+    ram: {
+        slot1: 'Corsair 8GB',
+        slot2: 'Corsair 8GB',
+    },
+    storage: {
+        1: 'Corsair 240GB',
+        2: 'WD 120GB'
+    },
+    psu: 'Corsair CV450',
+    case: 'NZXT H510',
+}
+
+// const showKeys = Object.keys(myDesktopPC)
+// console.log(showKeys);
+
+// const showValues = Object.values(myDesktopPC)
+// console.log(showValues);
+
+const showBoth = Object.entries(myDesktopPC)
+console.log(showBoth);
