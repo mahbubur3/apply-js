@@ -10,7 +10,7 @@
 
 <body>
     <div>
-        <h2>Computer Brand</h2>
+        <h2 id="heading">Computer Brand</h2>
         <ul id="brand-list">
             <li>Apple</li>
             <li>Dell</li>
@@ -20,6 +20,10 @@
     </div>
 
     <script>
+        const headingStyle = document.getElementById('heading')
+        headingStyle.style.color = "Blue"
+        headingStyle.style.backgroundColor = "Yellow"
+
         const create = document.createElement('li');
         create.innerText = 'HP';
         const add = document.getElementById('brand-list')
