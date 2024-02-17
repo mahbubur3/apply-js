@@ -10,25 +10,31 @@
 
 <body>
     <h2>Asus Rog Strix</h2>
-    <button id="set-hotpink">Click: HotPink</button>
+    <button id="set-red">Red</button>
+    <button id="set-pink">Pink</button>
+    <button id="set-yellow">Yellow</button>
 
     <!-- js -->
     <script>
-        let redButton = document.getElementById('set-hotpink');
-        redButton.addEventListener('click', makeRedColor);
+        // make red background 
+        let redButton = document.getElementById('set-red')
+        redButton.addEventListener('click', makeRedColor)
+
         function makeRedColor() {
-            document.body.style.backgroundColor = 'red';
+            document.body.style.backgroundColor = 'red'
         }
 
 
-        let hotPinkButton = document.getElementById('set-hotpink');
-        hotPinkButton.addEventListener('click', function () {
-            document.body.style.backgroundColor = 'hotpink'
+        // make yellow backgound in different way
+        const yellowButton = document.getElementById('set-yellow')
+        yellowButton.addEventListener('click', function () {
+            document.body.style.backgroundColor = 'yellow'
         })
 
 
-        document.getElementById('set-hotpink').addEventListener('click', function () {
-            document.body.style.backgroundColor = 'hotpink';
+        // make pink background in another way
+        document.getElementById('set-pink').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'pink'
         })
     </script>
 </body>
