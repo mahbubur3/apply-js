@@ -7,19 +7,21 @@
 // console.log(result);
 
 // one parameter
-const twoPower = num => num * 2;
-const result = twoPower(50);
-console.log(result);
+// const twoPower = num => num * 2;
+// const result = twoPower(50);
+// console.log(result);
 
 // empty parameter
-let myName = () => 'Mahbub';
-let output = myName();
-console.log(output);
+// let myName = () => 'Mahbub';
+// let output = myName();
+// console.log(output);
 
 // multiline arrow function..
-let sum = (a, b) => {
-    let result = a + b;
-    return result;
-};
-let total = sum(5, 10);
-console.log(total);
+// let sum = (a, b) => {
+//     let result = a + b;
+//     return result;
+// };
+// let total = sum(5, 10);
+// console.log(total);
+
+
