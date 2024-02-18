@@ -1,7 +1,17 @@
-const loadCountries = () => {
-    fetch('https://restcountries.com/v3.1/all')
-        .then(response => response.json())
-        .then(data => showCountries(data))
+// const loadCountries = () => {
+//     fetch('https://restcountries.com/v3.1/all')
+//         .then(response => response.json())
+//         .then(data => showCountries(data))
+// }
+
+// loadCountries();
+
+const loadCountries = async () => {
+    const url = 'https://restcountries.com/v3.1/all'
+    const response = await fetch(url)
+    let data = await response.json()
+
+    showCountries(data)
 }
 
 loadCountries();
