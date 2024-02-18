@@ -13,12 +13,16 @@ let products = [
     { name: 'Keyboard', price: 1200, color: 'Black' },
     { name: 'Pendrive', price: 300, color: 'Black' },
 ]
+
 let expensive = products.filter(product => product.price > 1000);
-console.log(expensive);
+console.log('expensive products: ', expensive);
+
+const chip = products.filter(product => product.price < 1000)
+console.log('chip products: ', chip);
 
 // let findBlack = products.filter(product => product.color == 'Black');
 // console.log(findBlack);
 
 // prothom jetare pabe setare output a dibe...
-let findBlack = products.find(product => product.color == 'Black');
-console.log(findBlack);
+// let findBlack = products.find(product => product.color == 'Black');
+// console.log(findBlack);

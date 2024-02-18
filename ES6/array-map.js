@@ -16,12 +16,12 @@
 // console.log(output);
 
 // * using normal function
-let numbers = [5, 3, 6, 2];
-let doubleIt = numbers.map(function (number) {
-    return number * 2;
-})
+// let numbers = [5, 3, 6, 2];
+// let doubleIt = numbers.map(function (number) {
+//     return number * 2;
+// })
 
-console.log(doubleIt);
+// console.log(doubleIt);
 
 // const numbers = [5, 3, 6, 2];
 // const result = numbers.map(x => x * 2);
@@ -35,3 +35,15 @@ console.log(doubleIt);
 // let numbers = [6, 8, 4, 2];
 // let sum = numbers.map(number => number + 5);
 // console.log(sum);
+
+
+
+const numbers = [5, 9, 2, 3]
+const output = [];
+
+for (const number of numbers) {
+    const result = number * 2;
+    output.push(result)
+}
+
+console.log(output);
