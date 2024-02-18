@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <h2>Hello!!</h2>
     <ul id="users"></ul>
     <button onclick="loadUsers()">Load Users</button>
 
@@ -20,10 +19,11 @@
                 .then(data => showUsers(data))
         }
 
-        function showUsers(data) {
-            let ul = document.getElementById('users')
-            for (let user of data) {
-                let li = document.createElement('li');
+        function showUsers(users) {
+            const ul = document.getElementById('users')
+
+            for (const user of users) {
+                const li = document.createElement('li');
                 li.innerText = `Name: ${user.name}`;
                 ul.appendChild(li);
             }

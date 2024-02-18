@@ -20,7 +20,8 @@
                 .then(response => response.json())
                 .then(data => displayData(data))
         }
-        getData()
+
+        getData();
 
         const displayData = (users) => {
             const container = document.getElementById('container')
