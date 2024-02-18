@@ -14,12 +14,14 @@
 // let info = new Seller('Rose', 56745345, 335, 'Toronto, Canada');
 // console.log(info);
 
+
 class Car {
     constructor(model, brand) {
         this.model = model;
         this.brand = brand;
     }
 }
+
 class Bus extends Car {
     constructor(poribohon, year, model, brand) {
         super(model, brand);
@@ -27,5 +29,6 @@ class Bus extends Car {
         this.year = year;
     }
 }
+
 let result = new Bus('Hanif', 2015, 'Civic', 'Honda');
 console.log(result);
