@@ -84,5 +84,3 @@ if (countryName[2] == "Japan") {
 } else {
     console.log("kunu deshei jabo na!!!")
 }
-
-

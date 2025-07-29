@@ -16,17 +16,17 @@
 //     console.log(j)
 // }
 
-// var fNames = ["jack", "rose", "emily", "tess", "ravi", "smith"];
-// for (var i = 0; i < fNames.length; i++) {
-//     var fname = fNames[i];
-//     console.log(fname);
-// }
+var fNames = ["jack", "rose", "emily", "tess", "ravi", "smith"];
+for (var i = 0; i < fNames.length; i++) {
+    var fname = fNames[i];
+    console.log(fname);
+}
 
-// var galaxySSeries = ["S3", "S5", "S7", "S9", "S20", "S6", "S21"];
-// for (var i = 0; i < galaxySSeries.length; i++) {
-//     var model = galaxySSeries[i];
-//     console.log(model);
-// }
+var galaxySSeries = ["S3", "S5", "S7", "S9", "S20", "S6", "S21"];
+for (var i = 0; i < galaxySSeries.length; i++) {
+    var model = galaxySSeries[i];
+    console.log(model);
+}
 
 
 let names = ['john', 'emma', 'roy', 'smith']
