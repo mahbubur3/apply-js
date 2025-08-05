@@ -18,10 +18,23 @@
 // }
 
 
-let num = 1, sum = 0;
-while (num <= 10) {
-    sum += num;
-    num++;
-}
+// let num = 1, sum = 0;
+// while (num <= 10) {
+//     sum += num;
+//     num++;
+// }
 
-console.log(sum);
+// console.log(sum);
+
+
+// const x = "";
+// if (!x.length) {
+//     console.log("hey");
+// } else {
+//     console.log("hi");
+// }
+
+
+const str = "hello";
+str[0] = "h";
+console.log(str);
