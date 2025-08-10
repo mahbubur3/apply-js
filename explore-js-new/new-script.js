@@ -154,16 +154,91 @@
 
 
 // Sum of all even numbers in an array
-function sumEvenNumbers(nums) {
-    let sum = 0;
-    for (const num of nums) {
-        if (num % 2 ==0) {
-            sum += num;
+// function sumEvenNumbers(nums) {
+//     let sum = 0;
+//     for (const num of nums) {
+//         if (num % 2 ==0) {
+//             sum += num;
+//         }
+//     }
+
+//     return sum;
+// }
+
+// const nums = [21, 8, 6, 3, 9, 10];
+// console.log(sumEvenNumbers(nums));
+
+
+
+// Check leaf year
+// function isLeafYear(year) {
+//     if ((year % 100 !== 0 && year % 4 === 0) || (year % 100 === 0 && year % 400 === 0)) {
+//         return true;
+//     }
+//     return false;
+// }
+
+// console.log(isLeafYear(2028));
+
+
+
+
+// Calculate averate the odd numbers in an array
+/*
+function averageOfOddNumbers(numbers) {
+    const oddNumbers = [];
+    for (const number of numbers) {
+        if (number % 2 !== 0) {
+            oddNumbers.push(number);
         }
     }
 
-    return sum;
+    let sum = 0;
+    for (const number of oddNumbers) {
+        sum += number;
+    }
+
+    const len = oddNumbers.length;
+    const avg = sum / len;
+
+    return avg;
 }
 
-const nums = [21, 8, 6, 3, 9, 10];
-console.log(sumEvenNumbers(nums));
+const numbers = [9, 2, 7, 4, 8, 1];
+const result = averageOfOddNumbers(numbers)
+console.log(result.toFixed(2));
+*/
+
+
+
+// Remove duplicated items from an array
+// function noDuplicated(arr) {
+//     const newArr = [];
+//     for (const i of arr) {
+//         if (newArr.includes(i) === false) {
+//             newArr.push(i);
+//         }
+//     }
+
+//     return newArr;
+// }
+
+// const arr = ['Japan', 'US', 'China', 'US', 'Russia'];
+// console.log(noDuplicated(arr));
+
+
+
+
+// Swap
+// let x = 5, y = 9;
+// [x, y] = [y, x];
+// console.log(x, y);
+
+
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(function() {
+//         console.log(i);
+//     }, 100);
+// }
+
+console.log(Math.pow(2, 3));
