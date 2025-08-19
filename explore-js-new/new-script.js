@@ -241,4 +241,113 @@ console.log(result.toFixed(2));
 //     }, 100);
 // }
 
-console.log(Math.pow(2, 3));
+
+
+// PRACTICE TASKS
+// function celsiousToFahrenheit(c) {
+//     return (c * 9/5) + 32;
+// } 
+
+// const c = 27;
+// console.log(celsiousToFahrenheit(c));
+
+
+
+// function repeatedCount(numbers, find) {
+//     let count = 0;
+
+//     for (const number of numbers) {
+//         if (number == find) {
+//             count++;
+//         } 
+//     }
+
+//     return count;
+// }
+
+// const numbers = [5, 6, 11, 12, 98, 5];
+// console.log(repeatedCount(numbers, 5));
+
+
+
+// Find max number from an array
+// function getMax(numbers) {
+//     let max = numbers[0];
+
+//     for (const num of numbers) {
+//         if (num > max) {
+//             max = num;
+//         }
+//     }
+
+//     return max;
+// }
+
+// const numbers = [10, 90, 20, 50, 80];
+// console.log(getMax(numbers));
+ 
+
+
+// Find cheapest phoe
+// const phones = [
+//     { name: 'apple', price: 1099},
+//     { name: 'samsung', price: 1199},
+//     { name: 'google', price: 999},
+//     { name: 'xiaomi', price: 699},
+// ]
+
+// function getCheapestPhone(phones) {
+//     let min = phones[0];
+
+//     for (const phone of phones) {
+//         if (phone.price < min.price) {
+//             min = phone;
+//         }
+//     }
+
+//     return min;
+// }
+
+// console.log(getCheapestPhone(phones));
+
+
+
+
+// Shopping cart total cost
+// const products = [
+//     { name: "Phone", price: 1099 },
+//     { name: "watch", price: 599 },
+//     { name: "keyboard", price: 299 },
+// ]
+
+// function getTotalPrice(products) {
+//     let total = 0;
+    
+//     for (const product of products) {
+//         total += product.price;
+//     } 
+
+//     return total;
+// }
+
+// console.log(getTotalPrice(products));
+
+
+
+const products = [
+    { name: "Phone", price: 1099, quantity: 2 },
+    { name: "watch", price: 599, quantity: 1 },
+    { name: "keyboard", price: 299, quantity: 3 },
+]
+
+function getTotalPrice(products) {
+    let total = 0;
+    
+    for (const product of products) {
+        total += product.price * product.quantity;
+    }
+
+    return total;
+}
+
+console.log(getTotalPrice(products));
