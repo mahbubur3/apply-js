@@ -334,20 +334,70 @@ console.log(result.toFixed(2));
 
 
 
-const products = [
-    { name: "Phone", price: 1099, quantity: 2 },
-    { name: "watch", price: 599, quantity: 1 },
-    { name: "keyboard", price: 299, quantity: 3 },
-]
+// const products = [
+//     { name: "Phone", price: 1099, quantity: 2 },
+//     { name: "watch", price: 599, quantity: 1 },
+//     { name: "keyboard", price: 299, quantity: 3 },
+// ]
 
-function getTotalPrice(products) {
-    let total = 0;
+// function getTotalPrice(products) {
+//     let total = 0;
     
-    for (const product of products) {
-        total += product.price * product.quantity;
-    }
+//     for (const product of products) {
+//         total += product.price * product.quantity;
+//     }
 
-    return total;
+//     return total;
+// }
+
+// console.log(getTotalPrice(products));
+
+
+
+
+/*
+function add(x, y) {
+    return x + y;
 }
 
-console.log(getTotalPrice(products));
+function sub(x, y) {
+    return x - y;
+}
+
+function mul(x, y) {
+    return x * y;
+}
+
+function div(x, y) {
+    return x / y;
+}
+
+function calculator(x, y, operation) {
+    if (operation === 'add') return add(x, y);
+    else if (operation === 'sub') return sub(x, y);
+    else if (operation === 'mul') return mul(x, y);
+    else if (operation === 'div') return div(x, y);
+    else return 'not alowed';
+}
+
+console.log(calculator(10, 5, 'mul'));
+*/
+
+
+
+
+function sumOfArray(arr) {
+    let sum = 0;
+
+    if (!Array.isArray(arr)) return "Invalid";
+
+    for (const i of arr) {
+        if (typeof i !== "number") return "Invalid";
+
+        sum += i;
+    }
+
+    return sum;
+}
+
+console.log(sumOfArray([10, 20, 30]));
